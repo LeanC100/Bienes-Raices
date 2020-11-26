@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-principal:#262119;
+}
+body{
+   font-family: sans-serif;
+    background-color:#f9f9f9 ;
+}
+
+.header, .footer{
+    padding: 15px 10px;
+    background-color: #fff;
+}
+.nosotros, .casas, .nuestros-clientes, .contacto{
+    margin: 2.5em auto;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    color: var(--color-principal);
+    text-align: center;
+    font-size: 2.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* header and nav */
+
+header{
+    height: 40px;
+    box-shadow: 0 4px 4px #e3e3e3;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    float: right;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.nav > a {
+    font-size: 20px;
+    margin-left: 3px;
+    padding: 10px 5px;
+    color: var(--color-principal);
+    border-style: dotted;
+    border-radius: 5px;
+    border-color: #f9f9f9 ;
+   /* color: #a76f08; */
+}
+.nav > a:hover {
+    /* color: black; */
+    /*   background-color: #a76f08; */
+    border-style: dotted;
+    border-color: var(--color-principal);
+}
+
+/* main */
+.main{
+    position: relative;
+    height: 100vh;
+    background-image: url(img/img-principal.jpeg);
+   /* filter: brightness(50%); */
+   background-attachment: fixed;
+   background-position: center;
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+}
+.main .span{
+    position: absolute;
+    color:  var(--color-principal);
+    font-size: 5em;
+    margin-top: 40vh;
+    margin-left: 15vw;
+}
+.main .span2{
+    position: absolute;
+    color: #fff;
+    font-size: 5em;
+    margin-top: 50vh;
+    margin-left: 25vw;
+}
+
+ /*contacto*/
+
+/* header*/
+.footer{
+    height: 40px;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}

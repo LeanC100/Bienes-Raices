@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-principal:#262119;
+}
+body{
+   font-family: sans-serif;
+    background-color:#f9f9f9 ;
+    font-size: 16px;
+}
+
+.header, .footer{
+    padding: 15px 10px;
+    background-color: #fff;
+}
+.footer{
+    margin-top: 5em;
+}
+.nosotros, .casas, .nuestros-clientes, .contacto{
+    margin: 3em auto;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif
+}
+/* header and nav */
+
+header{
+    height: 40px;
+    box-shadow: 0 4px 4px #e3e3e3;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.nav > a {
+    font-size: 20px;
+    margin-left: 3px;
+    padding: 10px 5px;
+    color: var(--color-principal);
+    border-style: dotted;
+    border-radius: 5px;
+    border-color: #f9f9f9 ;
+   /* color: #a76f08; */
+}
+.nav > a:hover {
+    /* color: black; */
+    /*   background-color: #a76f08; */
+    border-style: dotted;
+    border-color: var(--color-principal);
+}
+
+/* main */
+.main{
+    position: relative;
+    height: 100vh;
+    background-image: url(img/img-principal.jpeg);
+   /* filter: brightness(50%); */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Lobster', cursive;
+}
+.main .span{
+    position: absolute;
+    color:  var(--color-principal);
+    font-size: 5vw;
+    margin-top: 35vh;
+    margin-left: 10vw;
+}
+.main .span2{
+    position: absolute;
+    color: #fff;
+    font-size: 5vw;
+    margin-top: 50vh;
+    margin-left: 25vw;
+}
+
+/* Nosotros*/
+.nosotros .row-nosotros{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+  	margin: auto;
+  	margin-top: 10px;  	
+  	align-items: stretch;
+  	align-content: stretch;
+  	justify-content: space-between;  	
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.nosotros .row-nosotros .item-nosotros{
+    padding: 15px 5px;
+	font-size: smaller;	
+	width: 30%;
+	align-self: stretch;
+    text-align: justify;
+    border-style: solid;
+    border-width: 2px;
+}
+.item-nosotros > .svg-nosotros, .item-nosotros > .texto-nosotros{
+    margin-bottom: 8px;
+    text-align: center;
+}
+.svg-nosotros{
+    color: #e08709;
+    font-size: 120px;
+}
+/* casaa*/
+.casas .row-item-casas{
+    display: flex;
+	flex-direction: row;
+	width: 80%;
+  	margin: auto;
+  	margin-top: 10px;  	
+  	justify-content: space-between;  	
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.item_casas{
+    position: relative;
+    text-align: center;
+    border-width: 1px;
+    border-color: #B5B5B5;
+    border-style: solid;
+    background-color: #F5F5F5;
+    padding-bottom: 5px;
+    width: 30%;
+    align-self: stretch;
+}
+
+.img_casa >img{
+    margin: 0px;
+    padding-top: 0px;
+    width: 100%;
+    max-height: 200px;
+    
+}
+
+.texto_casas{
+    margin: 15px 5px;
+    align-self: flex-start;
+}
+.texto_casas > span{
+    color: #0ab801;
+    float: right;
+    font-size: 1.5rem;
+    margin-top:12px;
+}
+.texto_casas > h3{
+    font-size: 1.5rem;
+}
+.button_casas{
+    position: absolute;
+    text-align: right;
+    transition: all 200ms ease-out;
+    opacity: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.button_casas > button{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+    border-style: none;
+    background-color: #d3d3d38b;
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color-principal);
+}
+.button_casas:hover{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* nuestros clientes */
+
+.nuestros-clientes{
+    width: 40%;
+    text-align: center;
+
+}
+.clientes{
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*contacto*/
+.contacto{
+    position: relative;
+    background-image: url(img/img-contacto.jpg);
+    background-position: center;
+    height: 500px;
+    margin: 0 5em;
+    border-radius:15px;
+    text-align: center;
+    flex-direction: column;
+}
+.contacto h3{
+    position: absolute;
+    padding: 20px;
+    font-size: 3em;
+    margin-top: 7%;
+    margin-left: 20vw;
+    color: #fff;
+}
+.contacto p{
+    color: #fff;
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    margin-top: 12%;
+    margin-left: 30vw;
+    font-size: 2.2rem;
+}
+
+.contacto .button{
+    position: absolute;
+    justify-content: center; 
+    margin-left: 37vw;
+    bottom: 5rem;
+}
+.contacto .button button {
+    font-family: Hack, monospace;
+    background: rgb(255, 226, 95);
+    cursor: pointer;
+    border: 0;
+	font-size: 2.5rem;
+	padding: 1.5rem;
+	transition: all 0.5s;
+	border-radius: 15px;
+	width: auto;
+    max-width: 300px;
+}
+
+ .contacto .button button:hover {
+	background: var(--color-principal);
+	transition: all 0.5s;
+	border-radius: 10px;
+	padding: 1.5rem 1.5rem 1.5rem 3rem;
+	color: #fff;
+}
+/* header*/
+.footer{
+    height: 40px;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
