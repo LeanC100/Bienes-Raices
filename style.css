@@ -6,7 +6,7 @@
     padding: 0;
 }
 :root{
-    --color-principal:#262119;
+    --color-principal:#a88a68;
 }
 body{
    font-family: sans-serif;
@@ -15,13 +15,13 @@ body{
 }
 
 .header, .footer{
-    padding: 15px 10px;
+    padding: 0.9em 0.6em;
     background-color: #fff;
 }
 .footer{
     margin-top: 5em;
 }
-.nosotros, .casas, .nuestros-clientes, .contacto{
+.nosotros, .casas, .nuestros_clientes, .contacto{
     margin: 3em auto;
 }
 a{
@@ -40,24 +40,26 @@ p{
 /* header and nav */
 
 header{
-    height: 40px;
+    height: 2.5rem;
     box-shadow: 0 4px 4px #e3e3e3;
     justify-content: space-between;
 }
 .nav{
     display: flex;
     justify-content: center;
-    margin-right: 50px;
+    margin-right: 3.12em;
     align-items: center;
 }
 
+.nav{
+    margin: auto;
+}
 .nav > a {
-    font-size: 20px;
-    margin-left: 3px;
-    padding: 10px 5px;
+    font-size: 1.25em;
+    padding: 0.6rem 0.3rem;
     color: var(--color-principal);
     border-style: dotted;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     border-color: #f9f9f9 ;
    /* color: #a76f08; */
 }
@@ -72,7 +74,7 @@ header{
 .main{
     position: relative;
     height: 100vh;
-    background-image: url(img/img-principal.jpeg);
+    background: linear-gradient( 135deg,  rgba(3, 3, 3, 0.5)  0%, rgba(3, 3, 3, 0.5) 100% ), url("img/img-principal.jpeg") center no-repeat;
    /* filter: brightness(50%); */
     background-attachment: fixed;
     background-position: center;
@@ -100,29 +102,29 @@ header{
     flex-direction: row;
     width: 65%;
   	margin: auto;
-  	margin-top: 10px;  	
+  	margin-top: 0.6rem;  	
   	align-items: stretch;
   	align-content: stretch;
   	justify-content: space-between;  	
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0.6rem;
 }
 .nosotros .row-nosotros .item-nosotros{
-    padding: 15px 5px;
+    padding: 0.9rem 0.3rem;
 	font-size: smaller;	
 	width: 30%;
 	align-self: stretch;
     text-align: justify;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1.8px;
 }
 .item-nosotros > .svg-nosotros, .item-nosotros > .texto-nosotros{
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 .svg-nosotros{
     color: #e08709;
-    font-size: 120px;
+    font-size: 7.5rem;
 }
 /* casaa*/
 .casas .row-item-casas{
@@ -130,10 +132,10 @@ header{
 	flex-direction: row;
 	width: 80%;
   	margin: auto;
-  	margin-top: 10px;  	
+  	margin-top: 0.6rem;  	
   	justify-content: space-between;  	
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0.6rem;
 }
 .item_casas{
     position: relative;
@@ -142,31 +144,30 @@ header{
     border-color: #B5B5B5;
     border-style: solid;
     background-color: #F5F5F5;
-    padding-bottom: 5px;
+    padding-bottom: 0.3rem;
     width: 30%;
     align-self: stretch;
 }
 
 .img_casa >img{
-    margin: 0px;
-    padding-top: 0px;
+    margin: 0rem;
+    padding-top: 0rem;
     width: 100%;
-    max-height: 200px;
-    
+    max-height: 12.5rem; 
 }
 
 .texto_casas{
-    margin: 15px 5px;
+    margin: 0.9rem 0.3rem;
     align-self: flex-start;
 }
 .texto_casas > span{
     color: #0ab801;
     float: right;
-    font-size: 1.5rem;
-    margin-top:12px;
+    font-size: 24px;
+    margin-top:0.75rem;
 }
 .texto_casas > h3{
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 .button_casas{
     position: absolute;
@@ -184,11 +185,12 @@ header{
     height: 100%;
     margin: 0;
     cursor: pointer;
-    border-style: none;
-    background-color: #d3d3d38b;
-    font-size: 50px;
+    border-style: solid;
+    border-color: #e08709;
+    background-color: #ffffff;
+    font-size: 3.1rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--color-principal);
+    color: #e08709;
 }
 .button_casas:hover{
     visibility: visible;
@@ -197,17 +199,18 @@ header{
 
 /* nuestros clientes */
 
-.nuestros-clientes{
-    width: 40%;
+.nuestros_clientes{
+    width: 25rem;
     text-align: center;
-
 }
 .clientes{
     border: 2px solid #ccc;
+    
+    margin: auto;
     background-color: #eee;
     border-radius: 5px;
-    padding: 16px;
-    margin: 16px 0;
+    padding: 1rem;
+    margin-bottom: 1rem ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*contacto*/

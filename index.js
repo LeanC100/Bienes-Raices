@@ -1,9 +1,3 @@
-
- // Menu
-function Menu (params) {
-    
-}
-
 // hover y no hover
 function nosotros_hover(i, s, t) {
     var item = i, svg = s, texto = t;
