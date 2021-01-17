@@ -9,8 +9,8 @@ Vue.component('section-contacto', {
         <a name="contacto">
         <div  class="contacto">
             <h3> ¿Te gusto alguna de nuestras casas?</h3>
-            <p> ¡¡Contanos cual es tu favorita!!</p>
-            <div class="button"><button> Contactar</button></div>
+            <p> ¡¡Contanos cual es tu casa favorita!!</p>
+            <div class="button"><button> Contar</button></div>
         </div>
         </a>
     </div>

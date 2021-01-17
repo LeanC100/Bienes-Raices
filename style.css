@@ -40,9 +40,13 @@ p{
 /* header and nav */
 
 header{
+    position:sticky;
+    background-color: #fff;
+    top:0;
     height: 2.5rem;
-    box-shadow: 0 4px 4px #e3e3e3;
+    box-shadow: 0 4px 4px #71717136;
     justify-content: space-between;
+    z-index: 3;
 }
 .nav{
     display: flex;
@@ -68,6 +72,7 @@ header{
     /*   background-color: #a76f08; */
     border-style: dotted;
     border-color: var(--color-principal);
+    
 }
 
 /* main */
@@ -100,19 +105,19 @@ header{
 .nosotros .row-nosotros{
     display: flex;
     flex-direction: row;
-    width: 65%;
+    width: 75%;
   	margin: auto;
   	margin-top: 0.6rem;  	
   	align-items: stretch;
   	align-content: stretch;
-  	justify-content: space-between;  	
+  	justify-content: center;  	
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 3vw;
 }
-.nosotros .row-nosotros .item-nosotros{
+.item-nosotros{
     padding: 0.9rem 0.3rem;
 	font-size: smaller;	
-	width: 30%;
+    width: 25%;
 	align-self: stretch;
     text-align: justify;
     border-style: solid;
@@ -133,38 +138,38 @@ header{
 	width: 80%;
   	margin: auto;
   	margin-top: 0.6rem;  	
-  	justify-content: space-between;  	
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 3vw;
 }
 .item_casas{
     position: relative;
     text-align: center;
-    border-width: 1px;
-    border-color: #B5B5B5;
-    border-style: solid;
-    background-color: #F5F5F5;
+    width: 25%;
     padding-bottom: 0.3rem;
     width: 30%;
     align-self: stretch;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
 .img_casa >img{
     margin: 0rem;
     padding-top: 0rem;
     width: 100%;
-    max-height: 12.5rem; 
+    height: 20vw; 
 }
 
 .texto_casas{
-    margin: 0.9rem 0.3rem;
+    margin: 1rem 0.5rem;
     align-self: flex-start;
 }
+.texto_casas > p{
+    margin: 1rem 1rem;
+}
 .texto_casas > span{
-    color: #0ab801;
-    float: right;
-    font-size: 24px;
-    margin-top:0.75rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #13ff07af;
+    text-align: center;
+    font-size: 2em;
 }
 .texto_casas > h3{
     font-size: 24px;
@@ -200,14 +205,17 @@ header{
 /* nuestros clientes */
 
 .nuestros_clientes{
-    width: 25rem;
+    max-width: 25rem;
     text-align: center;
 }
+.buy {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.36);;
+}
+
 .clientes{
-    border: 2px solid #ccc;
-    
+    border: 2px solid rgba(224, 134, 9, 0.5);  
     margin: auto;
-    background-color: #eee;
     border-radius: 5px;
     padding: 1rem;
     margin-bottom: 1rem ;
@@ -215,63 +223,151 @@ header{
 }
 /*contacto*/
 .contacto{
-    position: relative;
     background-image: url(img/img-contacto.jpg);
     background-position: center;
-    height: 500px;
-    margin: 0 5em;
+    height: auto;
+    margin: 1em 5em;
     border-radius:15px;
     text-align: center;
-    flex-direction: column;
 }
 .contacto h3{
-    position: absolute;
-    padding: 20px;
+    padding: 1rem;
     font-size: 3em;
     margin-top: 7%;
-    margin-left: 20vw;
     color: #fff;
 }
+
 .contacto p{
     color: #fff;
-    position: absolute;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
-    margin-top: 12%;
-    margin-left: 30vw;
-    font-size: 2.2rem;
+    padding: 1rem;
+    font-size: 2.2em;
 }
 
 .contacto .button{
-    position: absolute;
-    justify-content: center; 
-    margin-left: 37vw;
-    bottom: 5rem;
+    margin-top: 9em;
 }
 .contacto .button button {
     font-family: Hack, monospace;
     background: rgb(255, 226, 95);
     cursor: pointer;
     border: 0;
-	font-size: 2.5rem;
+	font-size: 2.5em;
 	padding: 1.5rem;
-	transition: all 0.5s;
-	border-radius: 15px;
-	width: auto;
+    margin-bottom:1rem ;
+    border-radius: 15px;
     max-width: 300px;
 }
 
  .contacto .button button:hover {
 	background: var(--color-principal);
 	transition: all 0.5s;
-	border-radius: 10px;
-	padding: 1.5rem 1.5rem 1.5rem 3rem;
+	padding: 1.5rem 2rem 1.5rem 2rem;
 	color: #fff;
 }
-/* header*/
+/* Footer*/
 .footer{
     height: 40px;
     font-size: 1.5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+}
+
+
+/* media querys */
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+    .casas .row-item-casas{
+        justify-content: center;
+        width: 90%;
+    }
+    .main{
+        height: 50vh;
+    }
+    .main .span{
+        margin-top: 17vh;
+    }
+    .main .span2{
+        margin-top: 22vh;
+    } 
+    .item_casas{
+        width: 40%;
+    } 
+    .nosotros .row-nosotros{
+        width: 90%;
+    }
+    .item-nosotros{
+        width: 40%;
+    }
+    .img_casa > img{
+        height: 30vw; 
+    }
+    .contacto{
+        font-size: 10px;
+    }
+    .contacto .button{
+        margin-top: 8em;
+    }
+    .contacto h3{
+        overflow: hidden;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {    
+
+    .header, .footer {
+    padding: 0.2em 0.6em;
+    }
+    .header{
+        height: auto;
+    }
+    .nav > a {
+        font-size: 1em;
+    }
+    .main{
+        height: 70vh;
+    }
+    .main .span, .main .span2{
+        text-align: center;
+        margin-left: 0;
+        font-size: 7vw;
+    }    
+    .main .span{
+        margin-top: 30vh;
+        color: #fff;
+    }
+    .main .span2{
+        display: none;
+    }
+    .casas .row-item-casas{
+        width: 80%;
+        gap: 1rem;
+    }
+
+    .item_casas{
+        width: 100%;
+    }
+    .nosotros .row-nosotros{
+        justify-content: center;  	
+    }
+    .item-nosotros{
+        width: 80%;
+    }
+    .img_casa >img{
+        height: 70vw; 
+    } 
+    .contacto{
+        font-size: 12px;
+    }
+    .contacto h3{
+        display: none;
+    }
+    .contacto .button{
+    margin-top: 7em;
+    }
+    .nuestros_clientes{
+        width: 20rem;
+    }
+
 }

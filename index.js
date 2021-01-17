@@ -19,3 +19,15 @@ function nosotros_no_hover(i, s, t) {
     nosotros_svg.style.color = "#e08709";
     nosotros_div_texto.style.color = "#000";
 }
+
+
+/* ------------------------
+   scrollreveal
+------------------------ */
+
+ScrollReveal().reveal('.nosotros', {
+    duration: 30000,
+    origin: 'left',
+    distance: '-100px'
+});
+console.log("Esto es un error"); 
